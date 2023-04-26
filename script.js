@@ -23,9 +23,9 @@ function agregar(){
             console.log("Los productos que cargó son los siguientes: \n\n");
         productos.forEach(element => {
             console.log(
-            "- ID del producto: " + element.id + "\n" + 
-            "- Nombre del producto: " + element.prod + "\n" + 
-            "- Marca del producto: " + element.marca + "\n" + 
+            "- ID del producto: " + element.id + "\n" + 55 + 
+            "- Nombre del producto: " + element.prod + "\n" + 55 + 
+            "- Marca del producto: " + element.marca + "\n" + 55 + 
             "- Precio del producto: $" + element.precio + "\n\n");
         });
         alert("Se ha cargado la lista aleatoria de elementos")
@@ -82,9 +82,9 @@ function agregar(){
                     let id;
                         // Do while para que no ingresen un ID invalido ni repetido
                         do {
-                            id = Number(prompt("Ingrese el siguiente ID del producto (no se pueden repetir)"));
+                            id = Number(prompt("Ingrese el ID del producto (no repetir)"));
                             if(controlDeID.includes(id) || isNaN(id) || !id){
-                                alert("Ingresó un ID existente o inválido, intente nuevamente!")
+                                alert("Ingresó un ID inexistente o inválido, intente nuevamente!")
                                 opcion3=true;
                             }else{
                                 controlDeID.push(id);
