@@ -202,9 +202,9 @@ function ordenar (){
                     console.log("Los elementos ordenados segun su marca, quedan asi: \n\n");
                     productos.forEach(element => {
                         console.log(
-                        "- ID del producto: " + element.id + "\n" + 
-                        "- Nombre del producto: " + element.prod + "\n" + 
-                        "- Marca del producto: " + element.marca + "\n" + 
+                        "- ID del producto: " + element.id + 55 + "\n" + 
+                        "- Nombre del producto: " + element.prod + 55 + "\n" + 
+                        "- Marca del producto: " + element.marca + 55 + "\n" + 
                         "- Precio del producto: $" + element.precio + "\n\n");
                     });
                 break;
